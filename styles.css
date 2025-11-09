@@ -22,7 +22,12 @@ header, nav, main, footer {
   padding: 20px;
   text-align: center;
 }
-
+footer {
+  border-top: 2px solid #ccc; 
+  padding-top: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
 nav ul {
   display: flex;
   justify-content: center;
@@ -70,7 +75,7 @@ input, textarea, button {
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 button[type="submit"] {
-  background-color: #003366; /* Dark blue */
+  background-color: #003366;
   color: white;
   border: none;
   cursor: pointer;
@@ -78,7 +83,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0055aa; /* Slightly lighter blue on hover */
+  background-color: #0055aa;
 }
 input:focus, textarea:focus {
   border-color: #0077cc;
