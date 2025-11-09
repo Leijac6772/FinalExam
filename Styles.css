@@ -1,1 +1,75 @@
-
+body{
+  font-family: Arial, san-serif;
+  margin: 0;
+  padding: 0;
+}
+header, nav, main, footer {
+  padding: 20px
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  list-style: none;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+nav a:hover {
+  background-color: #ddd;
+}
+#blog {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+article {
+  flex: 1 1 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+input, textarea, button {
+  padding: 10px;
+  font-size: 1em;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+input:focus, textarea:focus {
+  border-color: #0077cc;
+  background-color: #f0f0ff;
+}
+@media (max-width: 767px) {
+  #blog {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024) {
+  #blog {
+    flec-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1025px) {
+  #blog {
+    flex-direction: row;
+  }
+}
+@keyframes fadeIn {
+  from {opacity: 0; }
+  to {opacity: 1; }
+}
+main, header, footer {
+  animation: fadeIn 2s ease-in;
+}
