@@ -2,6 +2,7 @@
 
 h1 {
   text-align: center;
+  background: linear-gradient(to right, #add8e6, #87ceeb);
   background-color: lightblue;
   padding: 20px;
   margin: 20px auto;
@@ -46,7 +47,10 @@ nav a {
 nav a:hover {
   background-color: #ddd;
 }
-
+nav a:focus {
+  outline: 2px solid #0077cc;
+  background-color: #eef;
+}
 /* Flexbox layout */
 #blog {
   display: flex;
@@ -59,6 +63,7 @@ article {
   flex: 1 1 300px;
   padding: 10px;
   border: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 
 form {
@@ -115,10 +120,6 @@ input:focus, textarea:focus {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-
-main, header, footer {
-  animation: fadeIn 2s ease-in;
-}
 @keyframes fadeInPop {
   0% {
     opacity: 0;
@@ -129,3 +130,7 @@ main, header, footer {
     transform: scale(1);
   }
 }
+main, header, footer {
+  animation: fadeIn 2s ease-in;
+}
+
